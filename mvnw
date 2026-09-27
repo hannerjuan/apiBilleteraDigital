@@ -43,6 +43,13 @@ esac
 
 # set JAVACMD and JAVACCMD
 set_java_home() {
+  if [ -z "${JAVA_HOME-}" ]; then
+    if [ -d "/c/Program Files/Android/Android Studio/jbr" ]; then
+      JAVA_HOME="/c/Program Files/Android/Android Studio/jbr"
+    elif [ -d "C:/Program Files/Android/Android Studio/jbr" ]; then
+      JAVA_HOME="C:/Program Files/Android/Android Studio/jbr"
+    fi
+  fi
   # For Cygwin and MinGW, ensure paths are in Unix format before anything is touched
   if [ -n "${JAVA_HOME-}" ]; then
     if [ -x "$JAVA_HOME/jre/sh/java" ]; then
