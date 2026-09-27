@@ -4,7 +4,7 @@ API RESTful bancaria de alto rendimiento desarrollada con **Spring Boot 3.3.4** 
 
 ---
 
-## 🛠️ Stack Tecnológico y Arquitectura
+##  Stack Tecnológico y Arquitectura
 
 * **Lenguaje:** Java 21 LTS
 * **Framework:** Spring Boot 3.3.4
@@ -19,7 +19,7 @@ API RESTful bancaria de alto rendimiento desarrollada con **Spring Boot 3.3.4** 
 
 ---
 
-## 🏛️ Modelo de Datos (PostgreSQL)
+##  Modelo de Datos (PostgreSQL)
 
 ```text
 +-------------------+       +-----------------------+       +------------------------+
@@ -37,7 +37,7 @@ API RESTful bancaria de alto rendimiento desarrollada con **Spring Boot 3.3.4** 
 
 ---
 
-## ⚡ Concurrencia, ACID y Prevención de Doble Gasto
+##  Concurrencia, ACID y Prevención de Doble Gasto
 
 Las operaciones financieras críticas implementan:
 1. **Transaccionalidad Atómica (`@Transactional(isolation = Isolation.READ_COMMITTED)`):** Toda transferencia debita la cuenta origen y acredita la cuenta destino en una sola unidad indivisible de trabajo.
@@ -47,7 +47,7 @@ Las operaciones financieras críticas implementan:
 
 ---
 
-## 📋 Catálogo de Endpoints Principales
+##  Catálogo de Endpoints Principales
 
 | Método | Endpoint | Descripción | Códigos HTTP |
 | :--- | :--- | :--- | :--- |
@@ -61,7 +61,7 @@ Las operaciones financieras críticas implementan:
 
 ---
 
-## 📑 Manejo de Errores RFC 7807 (Problem Details)
+##  Manejo de Errores RFC 7807 (Problem Details)
 
 Todas las excepciones de negocio y de validación devuelven el estándar RFC 7807 con el tipo `application/problem+json`:
 
@@ -78,7 +78,7 @@ Todas las excepciones de negocio y de validación devuelven el estándar RFC 780
 
 ---
 
-## 🚀 Guía de Ejecución
+##  Guía de Ejecución
 
 ### 1. Requisitos Previos
 * Java 21 LTS instalado (o mediante Android Studio JBR configurado en `JAVA_HOME`)
@@ -112,7 +112,7 @@ La aplicación iniciará en `http://localhost:8080`.
 
 ---
 
-## 🧪 Ejemplos de Peticiones cURL
+##  Ejemplos de Peticiones cURL
 
 ### 1. Registro de Usuario
 ```bash
